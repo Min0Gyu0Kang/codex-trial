@@ -1,0 +1,98 @@
+:root {
+  --bg: #f4f1e8;
+  --panel: #fffdf7;
+  --ink: #2a2a2a;
+  --line: #c8c2b0;
+  --snake: #2f6f3e;
+  --snake-head: #1f4d2a;
+  --food: #b83b3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f5efe0 0%, #eee8d9 100%);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.app {
+  width: min(100%, 560px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hud p {
+  margin: 0;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  background: #faf8f1;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+.actions,
+.controls {
+  margin-top: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  border: 1px solid #9f9987;
+  background: #f3efdf;
+  color: var(--ink);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.controls {
+  display: grid;
+  gap: 8px;
+}
+
+.controls .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.hint {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  color: #5a574f;
+}
+
+@media (min-width: 721px) {
+  .controls {
+    max-width: 320px;
+  }
+}
