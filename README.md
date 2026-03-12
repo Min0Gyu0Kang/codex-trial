@@ -1,5 +1,6 @@
 snake game (HTML5 based exe) by OpenAI Codex
-[game image](snake_thumb.png)
+<img width="1860" height="886" alt="snake_thumb" src="https://github.com/user-attachments/assets/ca809613-a366-4d7e-8643-38453add941c" />
+
 Snake Game (Portable Windows Build)
 ===================================
 
